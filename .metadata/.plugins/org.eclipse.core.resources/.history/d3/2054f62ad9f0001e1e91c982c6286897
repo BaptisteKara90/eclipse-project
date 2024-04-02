@@ -1,0 +1,14 @@
+package bo;
+
+public class Main {
+	
+		private static int factoriel(int chiffre) {
+			return chiffre * factoriel(chiffre - 1);
+		}
+		
+public static void main(String[] args) {
+		
+		System.out.println(factoriel(5));
+				
+   }
+}

@@ -1,0 +1,22 @@
+package bo;
+
+public class Main {
+	public static void main(String[] arg) {
+		
+		Livre jordan = new Livre ("The wolf of wall Street", 300);
+		Livre cleanCode = new Livre ("Clean Code", 400);
+		
+		PC hp = new PC("HP", "Laptop", "SSD 1TO", "Nvidia RTX 4090", "i9 14900H");
+		PC Dell = new PC("Dell", "Laptop", "SSD 500GO", "Nvidia RTX 3040", "I5 13000H");
+		
+		BD tintin = new BD("Tintin", "Hergé");
+		
+		Client gaelle = new Client("Maisel", "Gaelle", 25);
+		Client hugo = new Client("Dupont", "Hugo",30);
+		
+		gaelle.emprunter(Dell);
+		gaelle.emprunter(cleanCode);
+		
+		System.out.println(gaelle.toString());
+	}
+}

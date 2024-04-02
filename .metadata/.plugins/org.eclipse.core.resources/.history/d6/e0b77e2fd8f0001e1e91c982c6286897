@@ -1,0 +1,18 @@
+package bo;
+
+public class Facto {
+	private int chiffre;
+
+	public Facto(int chiffre) {
+		super();
+		this.chiffre = chiffre;
+	}
+	
+	public int factoriel(int chiffre) {
+		int newNbr = 0;
+		for (int i = 1; i < chiffre; i++) {
+			newNbr = chiffre * i ; 
+		}
+		return newNbr;
+	}
+}

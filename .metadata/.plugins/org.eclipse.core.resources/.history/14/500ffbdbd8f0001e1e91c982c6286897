@@ -1,0 +1,13 @@
+package bo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		Facto chiffre = new Facto(5);
+		
+		chiffre.factoriel(5);
+			
+   }
+}
